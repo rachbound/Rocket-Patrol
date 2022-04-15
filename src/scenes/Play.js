@@ -106,6 +106,7 @@ class Play extends Phaser.Scene {
         if(this.gameOver && Phaser.Input.Keyboard.JustDown(keyR)) {
            this.scene.restart();
         }
+<<<<<<< HEAD
         
         if(this.gameOver && Phaser.Input.Keyboard.JustDown(keyLEFT)) {
            this.scene.start("menuScene");
@@ -116,6 +117,10 @@ class Play extends Phaser.Scene {
         this.starfield1.tilePositionX -= 3;
         this.starfield2.tilePositionX -= 4;
   
+=======
+
+        this.starfield.tilePositionX -= 4;
+>>>>>>> parent of 21725b2 (fixed back to menu button)
         if (!this.gameOver) {               
            this.p1Rocket.update();         // update rocket sprite
            this.p2Rocket.update();         // update rocket sprite
